@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "aa6661b9-e88b-4a11-a2c7-f852476c72b0",
+		"name": "MacroPay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16974003"
+	},
+	"item": [
+		{
+			"name": "getPagos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fechaActual\":\"20220524\",\r\n    \"tasaInteres\":\"7.5\",\r\n    \"diasAnioComercial\":360\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/prestamos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"prestamos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePagos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fechaActual\":\"20220524\",\r\n    \"tasaInteres\":\"7.5\",\r\n    \"diasAnioComercial\":360,\r\n    \"pago\":7000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/prestamos/911ac37c-5990-4bf8-8cf0-b51f21c8ecbe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"prestamos",
+						"911ac37c-5990-4bf8-8cf0-b51f21c8ecbe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMenu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/menu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"menu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveMenu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/menu/load",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"menu",
+						"load"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
