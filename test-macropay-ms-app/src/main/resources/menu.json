@@ -1,0 +1,68 @@
+
+{
+    "title": "Configuración",
+    "type_menu": "group",
+    "key_menu": "configuration",
+    "children": [
+        {
+            "title": "Administración",
+            "type_menu": "collapsable",
+            "icon": "heroicons_solid:book-open",
+            "key_menu": "administration",
+            "order": 1,
+            "children":[
+                {
+                    "key_menu": "users1",
+                    "title": "Usuarios1",
+                    "type_menu": "basic",
+                    "icon": "heroicons_outline:users",
+                    "link": "/ruta1"
+                },
+                {
+                    "key_menu": "claves",
+                    "title": "claves",
+                    "type_menu": "basic",
+                    "icon": "heroicons_outline:key",
+                    "link": "/ruta2"
+                },
+                {
+                    "key_menu": "accounts",
+                    "title": "Cuentas",
+                    "type_menu": "basic",
+                    "icon": "heroicons_outline:banknotes",
+                    "link": "/ruta3"
+                }
+            ]
+        },
+        {
+            "title": "Permisos",
+            "type_menu": "collapsable",
+            "key_menu": "permissionsCollapse",
+            "icon": "heroicons_solid:lock-closed",
+            "order": 2,
+            "children":[
+                {
+                    "key_menu": "users",
+                    "title": "Usuarios",
+                    "type_menu": "basic",
+                    "icon": "heroicons_outline:user-circle",
+                    "link": "/ruta4"
+                },
+                {
+                    "key_menu": "permissions",
+                    "title": "Permisos",
+                    "type_menu": "basic",
+                    "icon": "heroicons_outline:lock-closed",
+                    "link": "/ruta5"
+                },
+                {
+                    "key_menu"   : "permissionsMenu",
+                    "title": "Menu por Permisos",
+                    "type_menu" : "basic",
+                    "icon" : "heroicons_outline:globe-alt",
+                    "link" : "/ruta6"
+                }
+            ]
+        }
+    ]
+}
